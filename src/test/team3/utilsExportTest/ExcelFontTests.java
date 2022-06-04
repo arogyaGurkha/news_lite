@@ -7,11 +7,12 @@ import jxl.write.WriteException;
 import org.junit.jupiter.api.Test;
 import team3.utils.ExcelFont;
 
+import static jxl.format.Colour.BLACK;
 import static jxl.format.UnderlineStyle.NO_UNDERLINE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class ExcelFontTest {
+public class ExcelFontTests {
 
     @Test
     public void createExcelFontTest() throws WriteException {
@@ -19,11 +20,11 @@ public class ExcelFontTest {
                 .bold()
                 .isItalic(true)
                 .pointSize(11)
-                .color(Colour.BLACK)
+                .color(BLACK)
                 .underlineStyle(NO_UNDERLINE)
                 .build();
 
-        assertEquals(boldFont.getColour(), Colour.BLACK);
+        assertEquals(boldFont.getColour(), BLACK);
         assertEquals(boldFont.getBoldWeight(), 700);
         assertEquals(boldFont.getPointSize(), 11);
         assertEquals(boldFont.getUnderlineStyle(), NO_UNDERLINE);
