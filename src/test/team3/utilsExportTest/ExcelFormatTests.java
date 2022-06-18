@@ -12,7 +12,11 @@ import static jxl.format.VerticalAlignment.CENTRE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ExcelFormatTests {
-
+    
+    /**
+     * Purpose : To make sure that hyperlinkCellFormat is created with the correct values
+     * Input : WritableCellFormat hyperlinkCellFormat = excelFormat.hyperlinkCellFormat()
+     */
     @Test
     public void hyperlinkCellFormatTest() throws WriteException {
         ExcelFormat excelFormat = new ExcelFormat();
@@ -31,6 +35,10 @@ public class ExcelFormatTests {
         assertEquals(hyperlinkCellFormat.getFont().getColour(), DARK_GREEN);
     }
 
+    /**
+     * Purpose : To make sure that titleCellFormat is created with the correct values
+     * Input : WritableCellFormat titleCellFormat = excelFormat.titleCellFormat()
+     */
     @Test
     public void titleCellFormatTest() throws WriteException{
         ExcelFormat excelFormat = new ExcelFormat();
@@ -50,6 +58,10 @@ public class ExcelFormatTests {
         assertEquals(titleCellFormat.getFont().getBoldWeight(), 400);
     }
 
+    /**
+     * Purpose : To make sure that numberCellFormatTest is created with the correct values
+     * Input : WritableCellFormat numberCellFormat = excelFormat.numberCellFormat();
+     */
     @Test
     public void numberCellFormatTest() throws WriteException {
         ExcelFormat excelFormat = new ExcelFormat();
@@ -69,6 +81,10 @@ public class ExcelFormatTests {
         assertEquals(numberCellFormat.getFont().getBoldWeight(), 400);
     }
 
+    /**
+     * Purpose : To make sure that sourceCellFormat is created with the correct values
+     * Input : WritableCellFormat sourceCellFormat = excelFormat.sourceCellFormat();
+     */
     @Test
     public void sourceCellFormatTest() throws WriteException {
         ExcelFormat excelFormat = new ExcelFormat();
@@ -88,6 +104,10 @@ public class ExcelFormatTests {
         assertEquals(sourceCellFormat.getFont().getBoldWeight(), 400);
     }
 
+    /**
+     * Purpose : To make sure that headerCellFormat is created with the correct values
+     * Input : WritableCellFormat headerCellFormat = excelFormat.headerCellFormat();
+     */
     @Test
     public void headerCellFormatTest() throws WriteException {
         ExcelFormat excelFormat = new ExcelFormat();
@@ -108,6 +128,10 @@ public class ExcelFormatTests {
         assertEquals(headerCellFormat.getFont().getBoldWeight(), 700);
     }
 
+    /**
+     * Purpose : To make sure that dataCellFormat is created with the correct values
+     * Input : WritableCellFormat dataCellFormat = excelFormat.dateCellFormat();
+     */
     @Test
     public void dateCellFormatTest() throws WriteException {
         ExcelFormat excelFormat = new ExcelFormat();
