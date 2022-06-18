@@ -3,7 +3,7 @@ package utilsExportTest;
 import jxl.format.Border;
 import jxl.write.WritableCellFormat;
 import jxl.write.WriteException;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import team3.utils.ExcelFormat;
 
 import static jxl.format.BorderLineStyle.THIN;

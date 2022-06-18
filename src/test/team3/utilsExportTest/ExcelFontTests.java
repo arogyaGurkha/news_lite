@@ -1,10 +1,10 @@
-package team3.utilsExportTest;
+package utilsExportTest;
 
 import jxl.format.Colour;
 import jxl.format.UnderlineStyle;
 import jxl.write.WritableFont;
 import jxl.write.WriteException;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import team3.utils.ExcelFont;
 
 import static jxl.format.Colour.BLACK;
