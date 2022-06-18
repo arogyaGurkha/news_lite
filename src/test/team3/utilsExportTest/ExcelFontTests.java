@@ -1,7 +1,5 @@
 package utilsExportTest;
 
-import jxl.format.Colour;
-import jxl.format.UnderlineStyle;
 import jxl.write.WritableFont;
 import jxl.write.WriteException;
 import org.junit.Test;
@@ -14,6 +12,13 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class ExcelFontTests {
 
+    /**
+     * Purpose : To make sure that WritableFont.Builder is created with the correct values
+     * Input : boldFont, noBoldFont
+     * Expected : 
+     *      boldFont != noBoldFont
+     *      boldFont.getBoldWeight != noBoldFont.getBoldWeight
+     */
     @Test
     public void createExcelFontTest() throws WriteException {
         WritableFont boldFont = new ExcelFont.Builder()
