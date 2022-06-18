@@ -6,12 +6,6 @@ import jxl.write.WritableFont;
 import jxl.write.WriteException;
 
 public class ExcelFont {
-    
-    private WritableFont writableFont;
-
-    private ExcelFont(Builder builder) {
-        writableFont = builder.writableFont;
-    }
 
     public static class Builder {
         
